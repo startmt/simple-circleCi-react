@@ -21,7 +21,7 @@ jobs:
         command: |
          docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && \
          docker build -t $DOCKER_USERNAME/test-react-app . && \
-         docker push $DOCKER_USERNAME/test-react-app \
+         docker push $DOCKER_USERNAME/test-react-app
     - run:
         name: build react
         command: npm run build
